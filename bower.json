@@ -1,0 +1,27 @@
+{
+  "name": "schoolmessenger",
+  "version": "0.0.1",
+  "description": "messenger",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "messenger"
+  ],
+  "authors": [
+    "Yuri Borunov <yuri@borunov.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-route": "^1.4.4",
+    "bootstrap": "^3.3.5"
+  }
+}

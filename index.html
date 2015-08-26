@@ -2,9 +2,10 @@
 <html lang="en" ng-app="messenger">
 <head>
 	<meta charset="UTF-8">
-	<title>Messenger</title>
+	<title>Messenger for SharpSchool</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Either use CDN versions of bootstrap or concatenate for production -->
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 </head>
@@ -64,10 +65,12 @@
 		</div>
 	</script>
 
+	<!-- Either use CDN versions of libs or concatenate for production -->
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
-
+	
+	<!-- Minify and concatenate files for production -->
 	<script src="js/src/messenger.js"></script>
 	<script src="js/src/services/session.js"></script>
 	<script src="js/src/services/messages.js"></script>

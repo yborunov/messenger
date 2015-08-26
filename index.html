@@ -15,22 +15,49 @@
 		</div>
 	</div>
 
-	<script type="text/ng-template" id="messeges.html">
-		Messeges page
+	<script type="text/ng-template" id="messages.html">
+		<h1>Messages page</h1>
+		<br>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="alert alert-danger" ng-show="errorMessage" ng-bind="errorMessage"></div>
+				<table class="table table-stripped">
+					<tr>
+						<th>id</th>
+						<th>name</th>
+						<th>isPublished</th>
+					</tr>
+					<tr ng-repeat="message in messagesList">
+						<td ng-bind="message.id"></td>
+						<td ng-bind="message.name"></td>
+						<td ng-bind="message.isPublished"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</script>
 
 	<script type="text/ng-template" id="login.html">
 		<h1>Login view</h1>
+		<br>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4">
-				<form>
+				<div class="alert alert-danger" ng-show="errorMessage" ng-bind="errorMessage"></div>
+				<form ng-submit="signin()">
 					<div class="form-group">
-						<label for="login">Login</label>
-						<input type="text" class="form-control" id="login" placeholder="Enter login here">
+						<label for="username">Login</label>
+						<input type="text" class="form-control" id="username" ng-model="signinForm.username" placeholder="Enter login here">
 					</div>
 					<div class="form-group">
 						<label for="password">Password</label>
-						<input type="password" class="form-control" id="password" placeholder="Enter password here">
+						<input type="password" class="form-control" id="password" ng-model="signinForm.password" placeholder="Enter password here">
+					</div>
+					<div class="form-group">
+						<label for="customer">Customer</label>
+						<input type="text" class="form-control" id="customer" ng-model="signinForm.customer" placeholder="Enter customer here">
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-default">Sign in</button>
 					</div>
 				</form>
 			</div>
@@ -39,9 +66,12 @@
 
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
 
 	<script src="js/src/messenger.js"></script>
-	<script src="js/src/MessagesCtrl.js"></script>
-	<script src="js/src/LoginCtrl.js"></script>
+	<script src="js/src/services/session.js"></script>
+	<script src="js/src/services/messages.js"></script>
+	<script src="js/src/controllers/MessagesCtrl.js"></script>
+	<script src="js/src/controllers/LoginCtrl.js"></script>
 </body>
 </html>

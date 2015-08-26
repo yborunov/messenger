@@ -1,10 +1,10 @@
 
-angular.module('messenger', ['ngRoute'])
+angular.module('messenger', ['ngRoute', 'ngMockE2E'])
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when('/messeges', {
-			templateUrl: 'messeges.html',
-			controller: 'MessegesCtrl'
+		.when('/messages', {
+			templateUrl: 'messages.html',
+			controller: 'MessagesCtrl'
 		})
 		.when('/login', {
 			templateUrl: 'login.html',

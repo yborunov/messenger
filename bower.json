@@ -1,12 +1,14 @@
 {
-  "name": "schoolmessenger",
+  "name": "school-messenger",
   "version": "0.0.1",
-  "description": "messenger",
+  "description": "Messenger assignment for SharpSchool",
   "moduleType": [
     "globals"
   ],
   "keywords": [
-    "messenger"
+    "messenger",
+    "sharpschool",
+    "assignment"
   ],
   "authors": [
     "Yuri Borunov <yuri@borunov.com>"

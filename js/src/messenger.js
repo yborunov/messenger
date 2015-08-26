@@ -1,5 +1,5 @@
 
-angular.module('messenger', ['ngRoute', 'ngMockE2E'])
+angular.module('messenger', ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 		.when('/messages', {

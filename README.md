@@ -1,6 +1,8 @@
 Messenger app
 =============
 
+Allows a user to login and display a list of their messages.
+
 ## How to Install
 
 1. Install Bower package dependencies (Bower has to be installed `npm install -g bower`)

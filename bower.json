@@ -1,13 +1,12 @@
 {
   "name": "school-messenger",
   "version": "0.0.1",
-  "description": "Messenger assignment for SharpSchool",
+  "description": "Messenger assignment for SchoolMessenger",
   "moduleType": [
     "globals"
   ],
   "keywords": [
     "messenger",
-    "sharpschool",
     "assignment"
   ],
   "authors": [
